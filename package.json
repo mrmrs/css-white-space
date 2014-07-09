@@ -1,0 +1,29 @@
+{
+  "name": "css-white-space",
+  "version": "0.0.1",
+  "homepage": "http://github.com/mrmrs/css-white-space",
+  "description": "Css module of single purpose classes for white space",
+  "keywords": [
+    "css",
+    "oocss",
+    "",
+    ""
+  ],
+  "css-white-space": {
+    "type": "git",
+    "url": "http://github.com/mrmrs/css-white-space.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrmrs/repo/issues",
+    "email": "hi@mrmrs.cc"
+  },
+  "author": {
+    "name": "Adam Morse",
+    "email": "hi@mrmrs.cc",
+    "url": "http://mrmrs.cc"
+  },
+  "contributors": [
+    { "name": "Adam Morse", "email": "hi@mrmrs.cc" }
+  ],
+  "license": "MIT"
+}
