@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "white-space"
   ],
   "css-white-space": {
     "type": "git",
