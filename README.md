@@ -25,7 +25,7 @@ or download the css on github and include in your project.
 .ws-prewrap { white-space: pre-wrap; }
 .ws-preline { white-space: pre-line; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .ws-norm-ns    { white-space: normal; }
   .ws-nowrap-ns  { white-space: nowrap; }
   .ws-pre-ns     { white-space: pre; }
@@ -33,7 +33,7 @@ or download the css on github and include in your project.
   .ws-preline-ns { white-space: pre-line; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .ws-norm-m    { white-space: normal; }
   .ws-nowrap-m  { white-space: nowrap; }
   .ws-pre-m     { white-space: pre; }
@@ -41,7 +41,7 @@ or download the css on github and include in your project.
   .ws-preline-m { white-space: pre-line; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .ws-norm-l    { white-space: normal; }
   .ws-nowrap-l  { white-space: nowrap; }
   .ws-pre-l     { white-space: pre; }
