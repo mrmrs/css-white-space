@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-white-space)
 ## File Size
 
 977B white-space.css
-761B white-space.min.css
+761B white-space.min.css 
+196B minified and gzipped
 
 ## The Code
 ```
