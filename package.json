@@ -1,7 +1,7 @@
 {
   "name": "css-white-space",
   "style": "white-space.css",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "http://github.com/mrmrs/css-white-space",
   "description": "Css module of single purpose classes for white space",
   "keywords": [
