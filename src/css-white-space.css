@@ -10,11 +10,11 @@
 .ws-preline { white-space: pre-line; }
 
 @media screen and (min-width: 48em) {
-  .ws-norm-ns    { white-space: normal; }
-  .ws-nowrap-ns  { white-space: nowrap; }
-  .ws-pre-ns     { white-space: pre; }
-  .ws-prewrap-ns { white-space: pre-wrap; }
-  .ws-preline-ns { white-space: pre-line; }
+  .ws-norm-s    { white-space: normal; }
+  .ws-nowrap-s  { white-space: nowrap; }
+  .ws-pre-s     { white-space: pre; }
+  .ws-prewrap-s { white-space: pre-wrap; }
+  .ws-preline-s { white-space: pre-line; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
