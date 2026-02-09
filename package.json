@@ -1,38 +1,44 @@
 {
   "name": "css-white-space",
-  "style": "white-space.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-white-space",
-  "description": "Css module of single purpose classes for white space",
+  "version": "2.0.0",
+  "description": "Functional CSS for white-space",
+  "style": "dist/white-space.css",
+  "main": "dist/white-space.css",
+  "exports": {
+    ".": "./dist/white-space.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "white-space"
+    "white-space",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-white-space": {
+  "homepage": "https://github.com/mrmrs/css-white-space",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-white-space.git"
+    "url": "https://github.com/mrmrs/css-white-space.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-white-space/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-white-space/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
