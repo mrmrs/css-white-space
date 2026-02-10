@@ -1,4 +1,4 @@
-.ws-norm {
+.ws-normal {
   white-space: normal;
 }
 
@@ -18,8 +18,20 @@
   white-space: pre-line;
 }
 
+.ws-wrap {
+  white-space: wrap;
+}
+
+.ws-collapse {
+  white-space: collapse;
+}
+
+.ws-preserve {
+  white-space: preserve nowrap;
+}
+
 @media screen and (width >= 32em) {
-  .ws-norm-s {
+  .ws-normal-s {
     white-space: normal;
   }
 
@@ -38,10 +50,22 @@
   .ws-preline-s {
     white-space: pre-line;
   }
+
+  .ws-wrap-s {
+    white-space: wrap;
+  }
+
+  .ws-collapse-s {
+    white-space: collapse;
+  }
+
+  .ws-preserve-s {
+    white-space: preserve nowrap;
+  }
 }
 
 @media screen and (width >= 48em) {
-  .ws-norm-m {
+  .ws-normal-m {
     white-space: normal;
   }
 
@@ -60,10 +84,22 @@
   .ws-preline-m {
     white-space: pre-line;
   }
+
+  .ws-wrap-m {
+    white-space: wrap;
+  }
+
+  .ws-collapse-m {
+    white-space: collapse;
+  }
+
+  .ws-preserve-m {
+    white-space: preserve nowrap;
+  }
 }
 
 @media screen and (width >= 96em) {
-  .ws-norm-l {
+  .ws-normal-l {
     white-space: normal;
   }
 
@@ -81,5 +117,17 @@
 
   .ws-preline-l {
     white-space: pre-line;
+  }
+
+  .ws-wrap-l {
+    white-space: wrap;
+  }
+
+  .ws-collapse-l {
+    white-space: collapse;
+  }
+
+  .ws-preserve-l {
+    white-space: preserve nowrap;
   }
 }
