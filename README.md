@@ -1,105 +1,100 @@
-# css-white-space 0.0.6
+# css-white-space
 
-Css module of single purpose classes for white space
+Functional CSS for white-space
 
-#### Stats
+## Filesize
 
-226 | 20 | 20
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/white-space.css` | 1597 bytes |
+| `dist/white-space.min.css` | 1151 bytes (237 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-white-space
-```
-
-#### With Git
-
-```
-git clone https://github.com/tachyons-css/css-white-space
+```sh
+npm install css-white-space
 ```
 
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-white-space";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
-```
-
-#### Using the CSS
-
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-white-space">
+<link rel="stylesheet" href="https://unpkg.com/css-white-space/dist/white-space.min.css">
 ```
 
-#### Development
+### Direct
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
-
-## The CSS
-
-```css
-/*
-   WHITE SPACE
-*/
-.ws-norm { white-space: normal; }
-.ws-nowrap { white-space: nowrap; }
-.ws-pre { white-space: pre; }
-.ws-prewrap { white-space: pre-wrap; }
-.ws-preline { white-space: pre-line; }
-@media screen and (min-width: 48em) {
- .ws-norm-ns { white-space: normal; }
- .ws-nowrap-ns { white-space: nowrap; }
- .ws-pre-ns { white-space: pre; }
- .ws-prewrap-ns { white-space: pre-wrap; }
- .ws-preline-ns { white-space: pre-line; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .ws-norm-m { white-space: normal; }
- .ws-nowrap-m { white-space: nowrap; }
- .ws-pre-m { white-space: pre; }
- .ws-prewrap-m { white-space: pre-wrap; }
- .ws-preline-m { white-space: pre-line; }
-}
-@media screen and (min-width: 64em) {
- .ws-norm-l { white-space: normal; }
- .ws-nowrap-l { white-space: nowrap; }
- .ws-pre-l { white-space: pre; }
- .ws-prewrap-l { white-space: pre-wrap; }
- .ws-preline-l { white-space: pre-line; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-white-space/dist/white-space.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.ws-normal` | `white-space: normal;` |
+| `.ws-nowrap` | `white-space: nowrap;` |
+| `.ws-pre` | `white-space: pre;` |
+| `.ws-prewrap` | `white-space: pre-wrap;` |
+| `.ws-preline` | `white-space: pre-line;` |
+| `.ws-wrap` | `white-space: wrap;` |
+| `.ws-collapse` | `white-space: collapse;` |
+| `.ws-preserve` | `white-space: preserve nowrap;` |
+| `.ws-normal-s` | `white-space: normal;` |
+| `.ws-nowrap-s` | `white-space: nowrap;` |
+| `.ws-pre-s` | `white-space: pre;` |
+| `.ws-prewrap-s` | `white-space: pre-wrap;` |
+| `.ws-preline-s` | `white-space: pre-line;` |
+| `.ws-wrap-s` | `white-space: wrap;` |
+| `.ws-collapse-s` | `white-space: collapse;` |
+| `.ws-preserve-s` | `white-space: preserve nowrap;` |
+| `.ws-normal-m` | `white-space: normal;` |
+| `.ws-nowrap-m` | `white-space: nowrap;` |
+| `.ws-pre-m` | `white-space: pre;` |
+| `.ws-prewrap-m` | `white-space: pre-wrap;` |
+| `.ws-preline-m` | `white-space: pre-line;` |
+| `.ws-wrap-m` | `white-space: wrap;` |
+| `.ws-collapse-m` | `white-space: collapse;` |
+| `.ws-preserve-m` | `white-space: preserve nowrap;` |
+| `.ws-normal-l` | `white-space: normal;` |
+| `.ws-nowrap-l` | `white-space: nowrap;` |
+| `.ws-pre-l` | `white-space: pre;` |
+| `.ws-prewrap-l` | `white-space: pre-wrap;` |
+| `.ws-preline-l` | `white-space: pre-line;` |
+| `.ws-wrap-l` | `white-space: wrap;` |
+| `.ws-collapse-l` | `white-space: collapse;` |
+| `.ws-preserve-l` | `white-space: preserve nowrap;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.ws-normal-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/white-space.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/white-space.css` — formatted
+- `dist/white-space.min.css` — minified
 
 ## License
 
-ISC
+MIT
